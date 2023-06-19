@@ -38,10 +38,51 @@ section {
 body{
   font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
 }
-  /* css formulario */
-  
-  form{
-    width: 300px;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
-  }
+/* CSS formulario */
+
+section {
+  width: 300px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+  text-align: center; /* Alinea los elementos al centro */
+}
+
+
+h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 20px; /* Espacio entre el título y el formulario */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="url"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #131313;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #ff0000; /* Color de fondo rojo */
+  color: #fff; /* Color de texto blanco */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #cc0000; /* Color de fondo rojo más oscuro al pasar el mouse */
+}
