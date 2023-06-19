@@ -35,5 +35,13 @@ section {
   .timeline-box {
     width: 200px; /* Set the desired width for the boxes */
   }
-
+body{
+  font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+}
+  /* css formulario */
   
+  form{
+    width: 300px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+  }
