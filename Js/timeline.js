@@ -1,4 +1,7 @@
-fetch('data/zelda-timeline.json')
+'use strict';
+
+
+fetch('zelda-timeline.json')
   .then(response => response.json())
   .then(data => {
     // Sort the data based on the "date" property in ascending order
