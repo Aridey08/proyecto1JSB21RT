@@ -1,4 +1,7 @@
 section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -7,22 +10,26 @@ section {
 .timeline-event {
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
   }
   
   .timeline-event::before {
-    content: attr(data-year);
+     content: attr(data-year);
     position: absolute;
-    top: 0;
-    left: -40px;
+    top: -30px;
     width: 30px;
-    padding: 5px;
+    height: 30px;
     background-color: #f2f2f2;
+    border-radius: 50%;
     text-align: center;
-    transform: translateY(-50%);
+    line-height: 30px;;
   }
   
   .timeline-event > * {
-    margin-left: 20px;
+     margin-top: 20px;
+    text-align: center;
   }
   
   .timeline-box {
