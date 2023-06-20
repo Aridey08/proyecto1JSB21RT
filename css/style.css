@@ -1,4 +1,4 @@
-
+/* Estilos generales  */
 *{
 
   margin: 0;
@@ -12,6 +12,7 @@ body{
 
 }
 
+/* Estilo para el Timeline  */
 
 
 #timeline-container {
@@ -73,7 +74,7 @@ body{
   transform: translateY(-50%);
 }
 
-/* Estilos para el contenido de los eventos */
+/* Estilos para el contenido del JSON */
 .event-content-wrapper {
   display: flex;
   flex-direction: column;
@@ -99,6 +100,8 @@ body{
   padding: 10px;
   margin: 10px;
 }
+
+/* Estilo para el formulario  */
 
 #form-section {
   position: fixed;
