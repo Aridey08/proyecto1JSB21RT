@@ -1,171 +1,4 @@
-<<<<<<< HEAD
-html{
-  background-color: #786bc2;
-}
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  flex-direction: row;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.timeline-event {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.timeline-event::before {
-  content: attr(data-year);
-  position: absolute;
-  top: -30px;
-  width: 30px;
-  height: 30px;
-  background-color: #f2f2f2;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 30px;;
-}
-
-.timeline-event > * {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.timeline-box {
-  width: 200px;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-
-section {
-  width: 300px;
-  margin: 0 auto;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-}
-.timeline-event img {
-  max-width: 100%;
-  height: auto;
-  transition: all 0.3s ease;
-}
-
-.timeline-event img:hover {
-  transform: scale(1.2);
-  z-index: 999;
-}
-h2 {
-  margin-bottom: 10px;
-}
-
-form {
-  margin-top: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="url"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #131313;
-  border-radius: 4px;
-}
-
-button {
-  padding: 10px 20px;
-  margin: 10px;
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #cc0000;
-}
-
-
-
-
-
-
-
-/*section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.timeline-event {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  
-  .timeline-event::before {
-     content: attr(data-year);
-    position: absolute;
-    top: -30px;
-    width: 30px;
-    height: 30px;
-    background-color: #f2f2f2;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 30px;;
-  }
-  
-  .timeline-event > * {
-     margin-top: 20px;
-    text-align: center;
-  }
-  
-  .timeline-box {
-    width: 200px; /* Set the desired width for the boxes 
-  }*/
-/*body{
-  font-family: 'Montserrat', sans-serif; /* Fuente Montserrat 
-}
-/* CSS formulario 
-
-section {
-  width: 300px;
-  margin: 0 auto;
-  font-family: 'Montserrat', sans-serif; /* Fuente Montserrat 
-  text-align: center; /* Alinea los elementos al centro 
-=======
-/* ESTILOS GENERALES */
 *{
 
   margin: 0;
@@ -179,7 +12,6 @@ body{
 
 }
 
-/* ESTILOS TIMELINE */
 
 
 #timeline-container {
@@ -202,7 +34,6 @@ body{
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.76);
 
->>>>>>> b737f23 (Nuevo estilo css)
 }
 
 
@@ -222,7 +53,7 @@ body{
   height: 40px;
 }
 
-/*Pares*/
+/*PARES*/
 .timeline-event:nth-of-type(odd) {
   float: left;
 }
@@ -232,7 +63,7 @@ body{
   transform: translateY(-50%);
 }
 
-/*Impares*/
+/*IMPARES*/
 .timeline-event:nth-of-type(even) {
   float: right;
 }
@@ -242,7 +73,7 @@ body{
   transform: translateY(-50%);
 }
 
-/* Estilos para el contenido del JSON */
+/* Estilos para el contenido de los eventos */
 .event-content-wrapper {
   display: flex;
   flex-direction: column;
@@ -256,26 +87,9 @@ body{
   text-align: center;
 }
 
-<<<<<<< HEAD
-form {
-  margin-top: 20px; /* Espacio entre el título y el formulario 
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="url"],
-textarea {
-  width: 100%;
-=======
 .event-image {
   width: 200px;
   height: auto;
->>>>>>> b737f23 (Nuevo estilo css)
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -284,22 +98,7 @@ textarea {
   text-align: center;
   padding: 10px;
   margin: 10px;
-<<<<<<< HEAD
-  background-color: #ff0000; /* Color de fondo rojo 
-  color: #fff; /* Color de texto blanco 
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
 }
-
-button:hover {
-  background-color: #cc0000; /* Color de fondo rojo más oscuro al pasar el mouse 
-}*/
-=======
-}
-
-/* ESTILO PARA EL FORMULARIO */
 
 #form-section {
   position: fixed;
@@ -313,4 +112,3 @@ button:hover {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
->>>>>>> b737f23 (Nuevo estilo css)
