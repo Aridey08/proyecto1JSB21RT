@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html{
   background-color: #786bc2;
 }
@@ -163,13 +164,99 @@ section {
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif; /* Fuente Montserrat 
   text-align: center; /* Alinea los elementos al centro 
+=======
+/* ESTILOS GENERALES */
+*{
+
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: url(../img/legendOfZelda.jpg) center fixed;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+/* ESTILOS TIMELINE */
+
+
+#timeline-container {
+  content: ' ';
+  position: absolute;
+  background: rgb(255, 255, 255);
+  width: 1px;
+  left: 50%;
+  padding: 5px;
+}
+.timeline-event {
+  width: 400px;
+  margin: 0px 40px;
+  padding: 20px;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.76);
+
+>>>>>>> b737f23 (Nuevo estilo css)
 }
 
 
-h2 {
+
+/* Estilos para el primer evento */
+.timeline-event:first-of-type::before {
+  content: none;
+}
+
+/* Estilos para los demás eventos */
+.timeline-event:not(:first-of-type)::before {
+  content: '';
+  position: absolute;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+/*Pares*/
+.timeline-event:nth-of-type(odd) {
+  float: left;
+}
+.timeline-event:nth-of-type(odd)::before {
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*Impares*/
+.timeline-event:nth-of-type(even) {
+  float: right;
+}
+.timeline-event:nth-of-type(even)::before {
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilos para el contenido del JSON */
+.event-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.event-title {
   margin-bottom: 10px;
+  text-align: center;
 }
 
+<<<<<<< HEAD
 form {
   margin-top: 20px; /* Espacio entre el título y el formulario 
 }
@@ -184,15 +271,20 @@ input[type="number"],
 input[type="url"],
 textarea {
   width: 100%;
+=======
+.event-image {
+  width: 200px;
+  height: auto;
+>>>>>>> b737f23 (Nuevo estilo css)
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #131313;
-  border-radius: 4px;
 }
 
-button {
-  padding: 10px 20px;
+.event-text {
+  text-align: center;
+  padding: 10px;
   margin: 10px;
+<<<<<<< HEAD
   background-color: #ff0000; /* Color de fondo rojo 
   color: #fff; /* Color de texto blanco 
   border: none;
@@ -204,3 +296,21 @@ button {
 button:hover {
   background-color: #cc0000; /* Color de fondo rojo más oscuro al pasar el mouse 
 }*/
+=======
+}
+
+/* ESTILO PARA EL FORMULARIO */
+
+#form-section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+>>>>>>> b737f23 (Nuevo estilo css)
