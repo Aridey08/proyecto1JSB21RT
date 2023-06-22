@@ -6,6 +6,9 @@
   
 }
 body{
+  display: flex;
+  flex-direction: column;
+  position: relative; 
   background: url(../img/legendOfZelda.jpg) center fixed;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
@@ -160,3 +163,5 @@ padding: 5px;
   display: none;
 }
 }}
+
+
