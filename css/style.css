@@ -117,7 +117,6 @@ h1{
 /* Estilo para el formulario  */
   
 #contenedor-formulario {
-    position: fixed;
     align-items: center;
     justify-content: flex-end;
     bottom: 0;
@@ -126,6 +125,10 @@ h1{
     box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
     padding: 20px;
+    margin-left: 25%;
+    margin-top: 5px;
+    width: 40%;
+    border-radius: 16px;
   }
 
 #formulario {
