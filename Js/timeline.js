@@ -94,6 +94,7 @@ formulario.addEventListener('submit', (e) => {
 
   // Guardar los eventos actualizados en el almacenamiento local
   guardarEventos(eventosAlmacenados);
+  console.log(agregarEventoAlTimeline)
 
   // Limpiar los campos del formulario
   formulario.reset();
