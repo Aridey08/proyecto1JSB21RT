@@ -172,14 +172,16 @@ content: ' ';
 position: absolute;
 background: rgb(255, 255, 255);
 width: 50%;
-left: 40%;
+left: 25%;
 padding: 1px;
+display: block;
+height: 100%;
 
 .timeline-event {
   width: 90%;
   margin: 0 auto;
-  border-bottom: 2px;
-  margin-bottom: 20%;
+  border-bottom: 0,5px;
+  margin-bottom: 10%;
 }
 
 .event-image{
@@ -189,6 +191,7 @@ padding: 1px;
 #contenedor-formulario{
 position: relative;
   width: 20%;
+  margin:0 auto;
 }
 
 #timeline-container{
@@ -197,9 +200,8 @@ display: block;
 }
 #formulario-icono.active{
   position: absolute;
-  display:inline-block ;
+  display:inline-flex ;
+  left:50%;
+  transform: translateX(-50%);
 }
 }}
-
-
-  
