@@ -165,8 +165,41 @@ h1{
     flex-direction: column;
     align-items: center;
   }
+@media only screen and (max-width: 600px) {
 
+#timeline-container {
+content: ' ';
+position: absolute;
+background: rgb(255, 255, 255);
+width: 50%;
+left: 40%;
+padding: 1px;
 
+.timeline-event {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 2px;
+  margin-bottom: 20%;
+}
+
+.event-image{
+  width: 100%;
+}
+
+#contenedor-formulario{
+position: relative;
+  width: 20%;
+}
+
+#timeline-container{
+display: block;
+  height: 100%;
+}
+#formulario-icono.active{
+  position: absolute;
+  display:inline-block ;
+}
+}}
 
 
   
