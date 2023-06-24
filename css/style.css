@@ -6,13 +6,15 @@
   
 }
 body{
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   position: relative; 
   background: url(../img/legendOfZelda.jpg) center fixed;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
-
+  
 
 }
 
@@ -21,18 +23,18 @@ h1{
   text-align: center; 
     font-size: 40px;
     font-weight: normal;
-    font-family: 'Lucida Handwriting', cursive;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
     left: 0;
     width: 100%;
-    background-color: rgba(80, 82, 235, 0.8);
+    background-color: rgba(46, 50, 248, 0.8);
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
     text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-    margin-top: 10px;
+    margin: 10px;
 }
 #timeline-container {
   content: ' ';
@@ -118,12 +120,32 @@ h1{
 }
 
 /* Estilo para el formulario  */
+#formulario-icono {
+  position: fixed;
+  align-items: center;
+  justify-content: flex-end;
+  bottom: 100px;
+  left: 2%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+}
   
 #contenedor-formulario {
+    position: fixed;
     align-items: center;
     justify-content: flex-end;
     bottom: 0;
-    left: 50%;
+    left: 60px;
+    bottom: 100px;
+    display: none;
     transform: translateX(-50%);
     box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
@@ -133,6 +155,10 @@ h1{
     width: 40%;
     border-radius: 16px;
   }
+  #formulario-icono.active + #contenedor-formulario {
+    display: block; /* Muestra el formulario cuando el icono tenga la clase 'active' */
+  }
+  
 
 #formulario {
     display: flex;
@@ -140,35 +166,7 @@ h1{
     align-items: center;
   }
 
-@media only screen and (max-width: 600px) {
-#timeline-container {
-content: ' ';
-position: absolute;
-background: rgb(255, 255, 255);
-width: 50%;
-left: 40%;
-padding: 1px;
 
 
-.timeline-event {
-  width: 70%;
-  margin: 1 auto;
-  border-bottom: 2px;
-  margin-bottom: 20%;
-}
 
-.event-image{
-  width: 100%;
-}
-#contenedor-formulario{
-  position: relative;
-  width: 20%;
-}
-#timeline-container{
-  display: block;
-  height: 100%;
-}
-
-}}
-
-
+  

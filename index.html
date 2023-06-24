@@ -6,40 +6,44 @@
     <title>Zelda Timeline</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
 </head>
 <body>
- <header>
+  <header>
     <h1>Cronología de los juegos Zelda</h1>
- </header>
-<!-- TIMELINE -->
-    <section>
-
-        <div class="timeline-event-content">
-            <div class="timeline-container" id="timeline-container">
-            </div>
-        </div>
-    </section>
- <!-- FORMULARIO -->
- <section>
-    <div id="contenedor-formulario">
-        <h2 class="event-title">Agregar nuevo evento</h2>
-        <form id="formulario">
-            <label for="event-title">Título:</label>
-            <input type="text" id="event-title" required>
-            <label for="event-date">Fecha:</label>
-            <input type="number" id="event-date" required>
-            <label for="event-image">Imagen (URL):</label>
-            <input type="url" id="event-image" required>
-            <label for="event-description">Descripción:</label>
-            <textarea id="event-description" required></textarea>
-            <button type="submit">Agregar información</button>
-        </form>
+  </header>
+  
+  <!-- TIMELINE -->
+  <section>
+    <div class="timeline-event-content">
+      <div class="timeline-container" id="timeline-container"></div>
     </div>
-
-</section>
-<!-- SCRIPT -->
-    <script src="Js/timeline.js">
-    </script>
-
-</html>
+  </section>
+  
+  <!-- FORMULARIO -->
+  <section>
+    <div id="formulario-icono">
+      <i class="fas fa-plus"></i>
+    </div>
+    <div id="contenedor-formulario">
+      <h2 class="event-title">Agregar nuevo evento</h2>
+      <form id="formulario">
+        <label for="event-title">Título:</label>
+        <input type="text" id="event-title" required>
+        <label for="event-date">Fecha:</label>
+        <input type="date" id="event-date" required>
+        <label for="event-image">Imagen (URL):</label>
+        <input type="url" id="event-image" required>
+        <label for="event-description">Descripción:</label>
+        <textarea id="event-description" required></textarea>
+        <button type="submit">Agregar información</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- SCRIPT -->
+  <script src="Js/timeline.js"></script>
 </body>
+</html>
