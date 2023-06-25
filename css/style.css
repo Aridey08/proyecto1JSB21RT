@@ -1,41 +1,39 @@
-/* Estilos generales  */
-*{
-
+/* Estilos generales */
+* {
   margin: 0;
   padding: 0;
-  
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  position: relative; 
+  position: relative;
   background: url(../img/legendOfZelda.jpg) center fixed;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
-  
-
 }
 
-/* Estilo para el Timeline  */
-h1{
-  text-align: center; 
-    font-size: 40px;
-    font-weight: normal;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    left: 0;
-    width: 100%;
-    background-color: rgba(46, 50, 248, 0.8);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(10px);
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-    margin: 10px;
+/* Estilo para el Timeline */
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  left: 0;
+  width: 100%;
+  background-color: rgba(46, 50, 248, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  margin: 10px;
 }
+
 #timeline-container {
   content: ' ';
   position: absolute;
@@ -44,6 +42,7 @@ h1{
   left: 50%;
   padding: 5px;
 }
+
 .timeline-event {
   width: 500px;
   margin: 0px 40px;
@@ -55,8 +54,8 @@ h1{
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.76);
-
 }
+
 /* Estilos para el primer evento */
 .timeline-event:first-of-type::before {
   content: none;
@@ -72,20 +71,22 @@ h1{
   height: 40px;
 }
 
-/*PARES*/
+/* PARES */
 .timeline-event:nth-of-type(odd) {
   float: left;
 }
+
 .timeline-event:nth-of-type(odd)::before {
   left: -60px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/*IMPARES*/
+/* IMPARES */
 .timeline-event:nth-of-type(even) {
   float: right;
 }
+
 .timeline-event:nth-of-type(even)::before {
   right: -60px;
   top: 50%;
@@ -119,7 +120,7 @@ h1{
   margin: 10px;
 }
 
-/* Estilo para el formulario  */
+/* Estilo para el formulario */
 #formulario-icono {
   position: fixed;
   align-items: center;
@@ -137,71 +138,72 @@ h1{
   cursor: pointer;
   z-index: 9999;
 }
-  
+
 #contenedor-formulario {
-    position: fixed;
-    align-items: center;
-    justify-content: flex-end;
-    bottom: 0;
-    left: 60px;
-    bottom: 100px;
-    display: none;
-    transform: translateX(-50%);
-    box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(20px);
-    padding: 20px;
-    margin-left: 25%;
-    margin-top: 5px;
-    width: 40%;
-    border-radius: 16px;
-  }
-  #formulario-icono.active + #contenedor-formulario {
-    display: block; /* Muestra el formulario cuando el icono tenga la clase 'active' */
-  }
-  
+  position: fixed;
+  align-items: center;
+  justify-content: flex-end;
+  left: 60px;
+  bottom: 100px;
+  display: none;
+  transform: translateX(-50%);
+  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  margin-left: 25%;
+  margin-top: 5px;
+  width: 40%;
+  border-radius: 16px;
+}
+
+#formulario-icono.active + #contenedor-formulario {
+  display: block;
+}
 
 #formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
+  #timeline-container {
+    content: ' ';
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 50%;
+    left: 25%;
+    padding: 1px;
+    display: block;
+    height: 100%;
+  }
 
-#timeline-container {
-content: ' ';
-position: absolute;
-background: rgb(255, 255, 255);
-width: 50%;
-left: 25%;
-padding: 1px;
-display: block;
-height: 100%;
+  .timeline-event {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 0.5px;
+    margin-bottom: 10%;
+  }
 
-.timeline-event {
-  width: 90%;
-  margin: 0 auto;
-  border-bottom: 0,5px;
-  margin-bottom: 10%;
-}
+  .event-image {
+    width: 100%;
+  }
 
-.event-image{
-  width: 100%;
-}
+  #contenedor-formulario {
+    position: relative;
+    width: 20%;
+    margin: 0 auto;
+  }
 
-#contenedor-formulario{
-position: relative;
-  width: 20%;
-  margin:0 auto;
-}
+  #timeline-container {
+    display: block;
+    height: 100%;
+  }
 
-#timeline-container{
-display: block;
-  height: 100%;
+  #formulario-icono.active {
+    position: absolute;
+    display: inline-flex;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
-#formulario-icono.active{
-  position: absolute;
-  display:inline-flex ;
-  left:50%;
-  transform: translateX(-50%);
-}
-}}
